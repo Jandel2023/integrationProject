@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<style>
+    .table-wrapper {
+        width: 100%;
+        margin: 30px auto;
+        /* background: #262626; */
+        padding: 20px;	
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    }
+    .table-title {
+        color: green;
+        padding-bottom: 10px;
+        /* margin: 0 0 10px; */
+    }
+    .table-title h2 {
+        /* margin: 6px 0 0; */
+        font-size: 22px;
+    }
+    .table-title .add-new {
+        float: right;
+        height: 30px;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow: none;
+        min-width: 100px;
+        border-radius: 50px;
+        line-height: 13px;
+    }
+    .table-title .add-new i {
+        margin-right: 4px;
+    }
+    table.table {
+        table-layout: fixed;
+    }
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+    }
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    table.table th:last-child {
+        width: 100px;
+    }
+    table.table td a {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+        min-width: 24px;
+    }    
+    table.table td a.add {
+        color: #27C46B;
+    }
+    table.table td a.edit {
+        color: #FFC107;
+    }
+    table.table td a.delete {
+        color: #E34724;
+    }
+    table.table td i {
+        font-size: 19px;
+    }
+    table.table td a.add i {
+        font-size: 24px;
+        margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }    
+    table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
+    table.table .form-control.error {
+        border-color: #f50000;
+    }
+    table.table td .add {
+        display: none;
+    }
+    </style>
+<body>
+    <div class="container-fluid">
+    <div class="container-fluid pt-4 px-4">
+        <div class="table-responsive">
+            <div class="table-wrapper bg-secondary">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><a href="../dashboard.html"><h2>Posts</h2></a></div>
+                        <div class="col-sm-4">
+                            <a href="addpost.html" class="btn btn-outline-success add-new"><i class="fa fa-plus"></i> Add New</a>
+                        </div>
+                    </div>
+        
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 25px;">#</th>
+                            <th>Image</th>
+                            <th>Content</th>
+                            <th>Author</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                     
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                            <td>
+                              
+                                <a href="" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" ><i class="material-icons">&#xE872;</i></a>
+                            </td>
+
+
+
+
+                        </tr>
+                       
+                    </tbody>
+                   
+                </table>
+             
+            </div>
+        </div>
+    </div>
+</div>     
+</body>
+</html>
